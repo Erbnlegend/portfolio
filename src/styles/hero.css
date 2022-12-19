@@ -1,0 +1,14 @@
+.hero {
+  color: white;
+  width: 60%;
+  margin: 0 auto;
+  & svg.openTag {
+    color: white;
+    width: 175px;
+    height: 175px;
+  }
+  & svg.closeTag {
+    width: 175px;
+    height: 175px;
+  }
+}
