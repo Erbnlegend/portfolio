@@ -1,0 +1,33 @@
+.navbar {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    align-items: center;
+    color: white;
+    & .weather {
+        display: flex;
+        align-items: center;
+        width: 40px;
+        height: 40px;
+    }
+    & .moon {
+        width: 40px;
+        height: 40px;
+    }
+    & ul {
+      display: flex;
+      align-items: center;
+      justify-content: flex-end;
+      gap: 15px;
+    }
+    & li {
+        padding: 10px;
+        font-size: 1.2rem;
+        list-style: none;
+    }
+    & a {
+        text-decoration: none;
+    }
+    & a:visited {
+        color: inherit;
+    }
+}

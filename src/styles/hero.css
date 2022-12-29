@@ -1,14 +1,28 @@
 .hero {
-  color: white;
-  width: 60%;
+  position: relative;
+  top: 15%;
+  display: flex;
+  max-width: 1000px;
+  min-width: 450px;
+  justify-content: center;
   margin: 0 auto;
   & svg.openTag {
-    color: white;
-    width: 175px;
-    height: 175px;
+    margin: 0 50px 50px 50px;
+    width: 225px;
+    height: 225px;
+  }
+  & .quote {
+    font-size: 1.5rem;
+    padding: 25px;
+    align-items: center;
+  }
+  & .author {
+    margin-top: 125px;
+    text-align: right;
   }
   & svg.closeTag {
-    width: 175px;
-    height: 175px;
+    margin: 250px 50px 0 50px;
+    width: 200px;
+    height: 200px;
   }
 }

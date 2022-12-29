@@ -1,6 +1,11 @@
+@import './navbar.css';
 @import './hero.css';
 
 body {
   background-color: #1d1d20;
   color: white;
+}
+
+.text-bg {
+  font-size: 2.5rem;
 }
