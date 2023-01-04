@@ -11,6 +11,15 @@ import './assets/tools/postcss.svg'
 import './assets/tools/react.svg'
 import './assets/tools/square-js.svg'
 
+// Previews
+import './assets/previews/battleship.png'
+import './assets/previews/github.png'
+import './assets/previews/tictactoe.png'
+import './assets/previews/weather.png'
+import './assets/previews/cv.png'
+import './assets/previews/shopping.png'
+import './assets/previews/toDo.png'
+
 // Styles
 import './index.html'
 import './styles/main.css'

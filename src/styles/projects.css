@@ -1,0 +1,36 @@
+.projects {
+  & .fixed {
+    position: fixed;
+    height: 100%;
+    left: 15px;
+    top: 30%;
+  }
+  & .projectsNav {
+    position: relative;
+  }
+  & .preview {
+    box-shadow: 1px 1px 5px 1px rgba(0,0,0, .8);
+    margin: 10px auto;
+    width: 690px;
+    height: 360px;
+    & .preview-tint {
+      background-color: rgba(0,0,0,.6);
+      height: 100%;
+      width: 100%;
+    }
+    & .tools {
+      position: relative;
+      color: white;
+      top: 5px;
+      right: 0;
+      padding: 3px;
+      width: 50px;
+    }
+  }
+  & .project-previews {
+
+  }
+  & .projectsAnimation {
+    height: 100%;
+  }
+}

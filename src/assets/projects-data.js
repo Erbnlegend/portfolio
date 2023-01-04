@@ -2,44 +2,44 @@ const data = [
   {
     name: 'shoppingCart',
     textName: 'Shopping Cart',
-    tools: ['node', 'webpack', 'react', 'square-js', 'html5', 'css3-alt'],
-    img: ''
+    tools: ['logo-nodejs', 'webpack', 'react', 'square-js', 'html5', 'css3-alt'],
+    img: './imgs/shopping.png'
   },
   {
     name: 'githubClone',
     textName: 'Github Clone',
-    tools: ['node', 'webpack', 'react', 'square-js', 'html5', 'css3-alt'],
-    img: ''
+    tools: ['logo-nodejs', 'webpack', 'react', 'square-js', 'html5', 'css3-alt'],
+    img: './imgs/github.png'
   },
   {
     name: 'cvCreator',
     textName: 'CV Creator',
-    tools: ['node', 'webpack', 'react', 'square-js', 'html5', 'css3-alt'],
-    img: ''
+    tools: ['logo-nodejs', 'webpack', 'react', 'square-js', 'html5', 'css3-alt'],
+    img: './imgs/cv.png'
   },
   {
     name: 'battleShip',
     textName: 'Battleship',
-    tools: ['node', 'webpack', 'square-js', 'html5', 'css3-alt'],
-    img: ''
+    tools: ['logo-nodejs', 'webpack', 'square-js', 'html5', 'css3-alt'],
+    img: './imgs/battleship.png'
   },
   {
     name: 'weatherApp',
     textName: 'Weather App',
-    tools: ['node', 'webpack', 'square-js', 'html5', 'css3-alt'],
-    img: ''
+    tools: ['logo-nodejs', 'webpack', 'square-js', 'html5', 'css3-alt'],
+    img: './imgs/weather.png'
   },
   {
     name: 'toDo',
     textName: 'To Do App',
-    tools: ['node', 'webpack', 'square-js', 'html5', 'css3-alt'],
-    img: ''
+    tools: ['logo-nodejs', 'webpack', 'square-js', 'html5', 'css3-alt'],
+    img: './imgs/toDo.png'
   },
   {
     name: 'ticTacToe',
     textName: 'Tic-Tac-Toe',
-    tools: ['node', 'webpack', 'square-js', 'html5', 'css3-alt'],
-    img: ''
+    tools: ['logo-nodejs', 'webpack', 'square-js', 'html5', 'css3-alt'],
+    img: './imgs/tictactoe.png'
   }
 ]
 

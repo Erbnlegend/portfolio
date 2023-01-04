@@ -26,10 +26,4 @@
         padding: 0 10px;
         font-size: 2rem;
     }
-    & a {
-        text-decoration: none;
-    }
-    & a:visited {
-        color: inherit;
-    }
 }

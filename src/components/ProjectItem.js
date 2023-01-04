@@ -4,10 +4,7 @@ import PropTypes from 'prop-types'
 const ProjectItem = (props) => {
   const { project } = props
   return (
-    <div>
-        <li>{`  { ...${project.name} },`}</li>
-      <div className='project-previews'></div>
-    </div>
+    <a href={`#${project.name}`}><li>{`  { ...${project.name} },`}</li></a>
   )
 }
 

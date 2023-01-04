@@ -23,7 +23,6 @@ const App = () => {
   }, [theme])
 
   const [projects, setProjects] = React.useState(data)
-  console.log(projects)
   return (
     <div className={`main ${theme}`}>
       <BrowserRouter>
