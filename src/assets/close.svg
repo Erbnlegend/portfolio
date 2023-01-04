@@ -1,8 +1,0 @@
-<svg className='closeTag' viewBox="0 0 14.499959 18" stroke-linecap="round" stroke-linejoin="round" fill='none' stroke='currentColor' stroke-width='2'>
-        <path
-          d="m 9.5,13 4,-4 -4,-4"
-        />
-        <path
-          d="M 6,1 1,17"
-        />
-      </svg>

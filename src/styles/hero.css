@@ -1,28 +1,108 @@
 .hero {
-  position: relative;
-  top: 15%;
   display: flex;
   max-width: 1000px;
   min-width: 450px;
+  height: 100vh;
   justify-content: center;
-  margin: 0 auto;
+  margin: 3% auto;
   & svg.openTag {
-    margin: 0 50px 50px 50px;
-    width: 225px;
-    height: 225px;
+    margin: -25px 50px 50px 50px;
+    width: 250px;
+    height: 250px;
   }
   & .quote {
-    font-size: 1.5rem;
-    padding: 25px;
+    font-size: 2.8rem;
+    padding: 5px;
     align-items: center;
   }
   & .author {
-    margin-top: 125px;
+    margin-top: 50px;
     text-align: right;
   }
   & svg.closeTag {
-    margin: 250px 50px 0 50px;
-    width: 200px;
-    height: 200px;
+    margin: 200px 50px 0 50px;
+    width: 225px;
+    height: 225px;
+  }
+}
+
+.viewWork {
+  position: absolute;
+  text-align: center;
+  width: 100%;
+  margin: 0 auto;
+  bottom: 10px;
+  & p {
+    font-size: 1.8rem;
+    padding: 0;
+    margin: 0;
+  }
+  & p:hover {
+    cursor: pointer;
+  }
+  & .viewArrow {
+    height: 100px;
+    width: 100px;
+  }
+  & .viewArrow:hover {
+    cursor: pointer;
+  }
+}
+
+.hero-background {
+  position: absolute;
+  display: grid;
+  grid-template-columns: repeat(5, minmax(150px, 1fr));
+  width: 98%;
+  height: 80%;
+  & .tool {
+    opacity: .3;
+    width: 100px;
+    height: 100px;
+  }
+  & .webpack {
+    background: url('../assets/tools/webpack.svg');
+    background-repeat: no-repeat;
+    padding-left: -45px;
+    margin-left: 45px;
+    background-size: contain;
+  }
+    & .postcss {
+    background: url('../assets/tools/postcss.svg');
+    background-repeat: no-repeat;
+    padding-left: 45px;
+    margin-left: -45px;
+    background-size: contain;
+  }
+    & .js {
+    background: url('../assets/tools/square-js.svg');
+    background-repeat: no-repeat;
+    padding-top: 50px;
+    margin-top: -50px;
+    background-size: contain;
+  }
+    & .html {
+    background: url('../assets/tools/html5.svg');
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
+    & .node {
+    background: url('../assets/tools/logo-nodejs.svg');
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
+    & .css {
+    background: url('../assets/tools/css3-alt.svg');
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
+    & .react {
+    background: url('../assets/tools/react.svg');
+    background-repeat: no-repeat;
+    padding-top: 50px;
+    margin-top: -50px;
+    padding-left: -75px;
+    margin-left: 75px;
+    background-size: contain;
   }
 }

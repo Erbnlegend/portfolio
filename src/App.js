@@ -4,6 +4,9 @@ import Home from './components/Home'
 import Navbar from './components/Navbar'
 import About from './components/About'
 
+// Projects-Data
+import data from './assets/projects-data'
+
 const App = () => {
   // Dark Mode
   const [theme, setTheme] = React.useState('dark')
@@ -19,6 +22,8 @@ const App = () => {
     document.body.className = theme
   }, [theme])
 
+  const [projects, setProjects] = React.useState(data)
+  console.log(projects)
   return (
     <div className={`main ${theme}`}>
       <BrowserRouter>
@@ -28,7 +33,7 @@ const App = () => {
         <Routes>
           <Route path='/' element={
           <Home
-
+            projects={projects}
           />} />
           <Route path='/about' element={
           <About

@@ -1,28 +1,30 @@
 .navbar {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    width: 95%;
+    height: 110px;
+    margin: 0 auto;
     align-items: center;
     color: white;
     & .weather {
-        display: flex;
+        justify-content: left;
+        gap: 0;
         align-items: center;
-        width: 40px;
-        height: 40px;
+        padding: 0 10px;
     }
     & .moon {
-        width: 40px;
-        height: 40px;
+        width: 30px;
+        height: 30px;
     }
     & ul {
       display: flex;
       align-items: center;
       justify-content: flex-end;
-      gap: 15px;
+      gap: 35px;
     }
     & li {
-        padding: 10px;
-        font-size: 1.2rem;
-        list-style: none;
+        padding: 0 10px;
+        font-size: 2rem;
     }
     & a {
         text-decoration: none;
