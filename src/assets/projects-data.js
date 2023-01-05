@@ -3,7 +3,7 @@ const data = [
     name: 'shoppingCart',
     description: 'A mock shopping cart that allows everything you would expect from one.',
     textName: 'Shopping Cart',
-    tools: ['logo-nodejs', 'webpack', 'react', 'square-js', 'html5', 'css3-alt'],
+    tools: ['nodejs', 'webpack', 'react', 'js', 'html5', 'css3'],
     img: './imgs/shopping.png',
     github: 'https://github.com/Erbnlegend/shopping-cart'
   },
@@ -11,7 +11,7 @@ const data = [
     name: 'githubClone',
     description: 'Rebuild the Github home page with all the fancy gizmos.',
     textName: 'Github Clone',
-    tools: ['logo-nodejs', 'webpack', 'react', 'square-js', 'html5', 'css3-alt'],
+    tools: ['nodejs', 'webpack', 'react', 'js', 'html5', 'css3'],
     img: './imgs/github.png',
     github: 'https://github.com/Erbnlegend/github-clone'
   },
@@ -19,7 +19,7 @@ const data = [
     name: 'cvCreator',
     description: 'Custom make your CV! Showcases editing many different states',
     textName: 'CV Creator',
-    tools: ['logo-nodejs', 'webpack', 'react', 'square-js', 'html5', 'css3-alt'],
+    tools: ['nodejs', 'webpack', 'react', 'js', 'html5', 'css3'],
     img: './imgs/cv.png',
     github: 'https://github.com/Erbnlegend/cv-creator'
   },
@@ -27,7 +27,7 @@ const data = [
     name: 'battleShip',
     description: 'A game of battleship against the computer! Sink all the enemy ships before yours are destroyed!',
     textName: 'Battleship',
-    tools: ['logo-nodejs', 'webpack', 'square-js', 'html5', 'css3-alt'],
+    tools: ['nodejs', 'webpack', 'js', 'html5', 'css3'],
     img: './imgs/battleship.png',
     github: 'https://github.com/Erbnlegend/battleship'
   },
@@ -35,7 +35,7 @@ const data = [
     name: 'weatherApp',
     description: 'A weather app using the openweather API that gets your location and has searchable locations',
     textName: 'Weather App',
-    tools: ['logo-nodejs', 'webpack', 'square-js', 'html5', 'css3-alt'],
+    tools: ['nodejs', 'webpack', 'js', 'html5', 'css3'],
     img: './imgs/weather.png',
     github: 'https://github.com/Erbnlegend/weatherApp'
   },
@@ -43,7 +43,7 @@ const data = [
     name: 'toDo',
     description: 'A simple to do app where you can save your ideas or projects',
     textName: 'To Do App',
-    tools: ['logo-nodejs', 'webpack', 'square-js', 'html5', 'css3-alt'],
+    tools: ['nodejs', 'webpack', 'js', 'html5', 'css3'],
     img: './imgs/toDo.png',
     github: 'https://github.com/Erbnlegend/toDo'
   },
@@ -51,7 +51,7 @@ const data = [
     name: 'ticTacToe',
     description: 'A two player game of Tic-Tac-Toe!',
     textName: 'Tic-Tac-Toe',
-    tools: ['square-js', 'html5', 'css3-alt'],
+    tools: ['js', 'html5', 'css3'],
     img: './imgs/tictactoe.png',
     github: 'https://github.com/Erbnlegend/tic-tac-toe'
   }

@@ -76,7 +76,7 @@
       background-size: contain;
     }
       & .js {
-      background: url('../assets/tools/square-js.svg');
+      background: url('../assets/tools/js.svg');
       background-repeat: no-repeat;
       padding-top: 50px;
       margin-top: -50px;
@@ -88,12 +88,12 @@
       background-size: contain;
     }
       & .node {
-      background: url('../assets/tools/logo-nodejs.svg');
+      background: url('../assets/tools/nodejs.svg');
       background-repeat: no-repeat;
       background-size: contain;
     }
       & .css {
-      background: url('../assets/tools/css3-alt.svg');
+      background: url('../assets/tools/css3.svg');
       background-repeat: no-repeat;
       background-size: contain;
     }

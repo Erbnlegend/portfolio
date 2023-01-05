@@ -6,7 +6,7 @@ const ProjectItemImages = (props) => {
 
   const toolsMap = project.tools.map((item, index) => {
     return (
-      <img className='tools' key={index} src={`./imgs/${item}.svg`} alt={item}/>
+      <img className='tools' key={index} src={`./imgs/${item}.svg`} alt={item} title={item}/>
     )
   })
 

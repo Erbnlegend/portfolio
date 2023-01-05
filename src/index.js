@@ -4,12 +4,12 @@ import App from './App'
 
 // Tools Used
 import './assets/tools/webpack.svg'
-import './assets/tools/css3-alt.svg'
+import './assets/tools/css3.svg'
 import './assets/tools/html5.svg'
-import './assets/tools/logo-nodejs.svg'
+import './assets/tools/nodejs.svg'
 import './assets/tools/postcss.svg'
 import './assets/tools/react.svg'
-import './assets/tools/square-js.svg'
+import './assets/tools/js.svg'
 
 // Previews
 import './assets/previews/battleship.png'
