@@ -38,7 +38,7 @@ const Hero = () => {
     freezeOnceVisible: false
   })
 
-  const slideLeft = useSpring({
+  const opacityShort = useSpring({
     config: { duration: 500 },
     from: { opacity: 0, left: '-200px' },
     to: {
@@ -46,7 +46,7 @@ const Hero = () => {
       left: dataRefSlide?.isIntersecting ? '0' : '-200px'
     }
   })
-  const slideRight = useSpring({
+  const opacityLong = useSpring({
     config: { duration: 900 },
     from: { opacity: 0, right: '-200px' },
     to: {
@@ -59,36 +59,36 @@ const Hero = () => {
     <div className='background-container'>
       <div className='hero-background'>
         <div ref={ triggerSlide } ></div>
-        <animated.div style={ slideLeft } >
+        <animated.div style={ opacityShort } >
           <div className='tool webpack'></div>
         </animated.div>
         <div className='tool'></div>
         <div className='tool'></div>
         <div className='tool'></div>
         <div className='tool'></div>
-        <animated.div style={ slideRight } >
+        <animated.div style={ opacityLong } >
           <div className='tool postcss'></div>
         </animated.div>
         <div className='tool'></div>
-        <animated.div style={ slideLeft } >
+        <animated.div style={ opacityShort } >
           <div className='tool js'></div>
         </animated.div>
-        <animated.div style={ slideRight } >
+        <animated.div style={ opacityLong } >
           <div className='tool html'></div>
         </animated.div>
         <div className='tool'></div>
         <div className='tool'></div>
-        <animated.div style={ slideRight } >
+        <animated.div style={ opacityLong } >
           <div className='tool node'></div>
         </animated.div>
         <div className='tool'></div>
         <div className='tool'></div>
         <div className='tool'></div>
-        <animated.div style={ slideLeft } >
+        <animated.div style={ opacityShort } >
           <div className='tool css'></div>
         </animated.div>
         <div className='tool'></div>
-        <animated.div style={ slideRight } >
+        <animated.div style={ opacityLong } >
           <div className='tool react'></div>
         </animated.div>
         <div className='tool'></div>
