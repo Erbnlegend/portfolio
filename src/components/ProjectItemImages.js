@@ -12,16 +12,17 @@ const ProjectItemImages = (props) => {
 
   return (
     <div className='preview' id={project.name} style={{ background: `url(${project.img})`, backgroundSize: 'contain', backgroundRepeat: 'no-repeat' }} alt={project.textName} >
+      <div className='preview-tint'></div>
+      <div className='flex-container header'>
+          <div className='title'>{project.textName}</div>
+          <div>
+            {toolsMap}
+          </div>
+        </div>
       <div className='description text-md'>{project.description}</div>
       <div className='buttons text-sm'>
         <a className='live' href={`https://www.aaronerb.dev/${project.name}`} target='_blank' rel="noreferrer"><button>Live preview</button></a>
         <a className='code' href={project.github} target='_blank' rel="noreferrer"><button>View the code</button></a>
-      </div>
-      <div className='preview-tint flex-container'>
-        <div className='title'>{project.textName}</div>
-        <div>
-          {toolsMap}
-        </div>
       </div>
     </div>
   )

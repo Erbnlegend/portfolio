@@ -60,7 +60,7 @@ const Navbar = () => {
         </ul>
           )
         : (
-        <div className='flex-container'>
+        <div className='weather flex-container'>
           <div className='loader-3'></div>
           <li className='text-sm'>Location must be allowed</li>
         </div>
