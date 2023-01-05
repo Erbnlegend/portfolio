@@ -109,10 +109,14 @@ const Hero = () => {
           <path d="M 6,1 1,17"/>
         </svg>
       </div>
+      <animated.div style={ opacityShort } >
       <div className='viewWork'>
+        <a href='#shoppingCart' >
         <p>View my work</p>
         <ChevronDown className='viewArrow'/>
+        </a>
       </div>
+      </animated.div>
     </div>
   )
 }
