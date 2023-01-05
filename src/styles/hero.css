@@ -50,7 +50,6 @@
 }
 
 .background-container {
-  position: relative;
   & .hero-background {
     position: absolute;
     display: grid;
