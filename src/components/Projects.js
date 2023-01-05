@@ -77,7 +77,7 @@ const Projects = (props) => {
             <div>{']'}</div>
           </animated.div>
         </ul>
-        <div className='project-previews flex-column-container'>
+        <div className='flex-column-container'>
         { projectPreviewMap }
         </div>
       </div>

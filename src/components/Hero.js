@@ -1,29 +1,96 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import { ChevronDown } from 'lucide-react'
+import { useSpring, animated } from 'react-spring'
 
 const Hero = () => {
+  // Animations
+  function useIntersectionObserver (
+    elementRef,
+    { threshold = 0, root = null, rootMargin = '-175px', freezeOnceVisible = false }
+  ) {
+    const [entry, setEntry] = React.useState()
+
+    const frozen = entry?.isIntersecting && freezeOnceVisible
+
+    const updateEntry = ([entry]) => {
+      setEntry(entry)
+    }
+
+    useEffect(() => {
+      const node = elementRef?.current
+      const hasIOSupport = !!window.IntersectionObserver
+
+      if (!hasIOSupport || frozen || !node) return
+
+      const observerParams = { threshold, root, rootMargin }
+      const observer = new IntersectionObserver(updateEntry, observerParams)
+
+      observer.observe(node)
+
+      return () => observer.disconnect()
+    }, [elementRef, threshold, root, rootMargin, frozen])
+
+    return entry
+  }
+
+  const triggerSlide = React.useRef()
+  const dataRefSlide = useIntersectionObserver(triggerSlide, {
+    freezeOnceVisible: false
+  })
+
+  const slideLeft = useSpring({
+    config: { duration: 500 },
+    from: { opacity: 0, left: '-200px' },
+    to: {
+      opacity: dataRefSlide?.isIntersecting ? 1 : 0,
+      left: dataRefSlide?.isIntersecting ? '0' : '-200px'
+    }
+  })
+  const slideRight = useSpring({
+    config: { duration: 900 },
+    from: { opacity: 0, right: '-200px' },
+    to: {
+      opacity: dataRefSlide?.isIntersecting ? 1 : 0,
+      right: dataRefSlide?.isIntersecting ? '0' : '-200px'
+    }
+  })
+
   return (
-    <div>
+    <div className='background-container'>
       <div className='hero-background'>
-        <div className='tool'></div>
-        <div className='tool webpack'></div>
-        <div className='tool'></div>
-        <div className='tool'></div>
-        <div className='tool'></div>
-        <div className='tool'></div>
-        <div className='tool postcss'></div>
-        <div className='tool'></div>
-        <div className='tool js'></div>
-        <div className='tool html'></div>
-        <div className='tool'></div>
-        <div className='tool'></div>
-        <div className='tool node'></div>
+        <div ref={ triggerSlide } ></div>
+        <animated.div style={ slideLeft } >
+          <div className='tool webpack'></div>
+        </animated.div>
         <div className='tool'></div>
         <div className='tool'></div>
         <div className='tool'></div>
-        <div className='tool css'></div>
         <div className='tool'></div>
-        <div className='tool react'></div>
+        <animated.div style={ slideRight } >
+          <div className='tool postcss'></div>
+        </animated.div>
+        <div className='tool'></div>
+        <animated.div style={ slideLeft } >
+          <div className='tool js'></div>
+        </animated.div>
+        <animated.div style={ slideRight } >
+          <div className='tool html'></div>
+        </animated.div>
+        <div className='tool'></div>
+        <div className='tool'></div>
+        <animated.div style={ slideRight } >
+          <div className='tool node'></div>
+        </animated.div>
+        <div className='tool'></div>
+        <div className='tool'></div>
+        <div className='tool'></div>
+        <animated.div style={ slideLeft } >
+          <div className='tool css'></div>
+        </animated.div>
+        <div className='tool'></div>
+        <animated.div style={ slideRight } >
+          <div className='tool react'></div>
+        </animated.div>
         <div className='tool'></div>
       </div>
       <div className='hero'>

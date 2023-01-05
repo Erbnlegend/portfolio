@@ -60,7 +60,10 @@ const Navbar = () => {
         </ul>
           )
         : (
-        <div></div>
+        <div className='flex-container'>
+          <div className='loader-3'></div>
+          <li className='text-sm'>Location must be allowed</li>
+        </div>
           )}
       <ul className='nav'>
         <NavLink to='./#projects'><li>Projects</li> </NavLink>

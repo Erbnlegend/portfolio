@@ -49,60 +49,63 @@
   }
 }
 
-.hero-background {
-  position: absolute;
-  display: grid;
-  grid-template-columns: repeat(5, minmax(150px, 1fr));
-  width: 98%;
-  height: 80%;
-  & .tool {
-    opacity: .3;
-    width: 100px;
-    height: 100px;
-  }
-  & .webpack {
-    background: url('../assets/tools/webpack.svg');
-    background-repeat: no-repeat;
-    padding-left: -45px;
-    margin-left: 45px;
-    background-size: contain;
-  }
-    & .postcss {
-    background: url('../assets/tools/postcss.svg');
-    background-repeat: no-repeat;
-    padding-left: 45px;
-    margin-left: -45px;
-    background-size: contain;
-  }
-    & .js {
-    background: url('../assets/tools/square-js.svg');
-    background-repeat: no-repeat;
-    padding-top: 50px;
-    margin-top: -50px;
-    background-size: contain;
-  }
-    & .html {
-    background: url('../assets/tools/html5.svg');
-    background-repeat: no-repeat;
-    background-size: contain;
-  }
-    & .node {
-    background: url('../assets/tools/logo-nodejs.svg');
-    background-repeat: no-repeat;
-    background-size: contain;
-  }
-    & .css {
-    background: url('../assets/tools/css3-alt.svg');
-    background-repeat: no-repeat;
-    background-size: contain;
-  }
-    & .react {
-    background: url('../assets/tools/react.svg');
-    background-repeat: no-repeat;
-    padding-top: 50px;
-    margin-top: -50px;
-    padding-left: -75px;
-    margin-left: 75px;
-    background-size: contain;
+.background-container {
+  position: relative;
+  & .hero-background {
+    position: absolute;
+    display: grid;
+    grid-template-columns: repeat(5, minmax(150px, 1fr));
+    width: 98%;
+    height: 80%;
+    & .tool {
+      opacity: .2;
+      width: 100px;
+      height: 100px;
+    }
+    & .webpack {
+      background: url('../assets/tools/webpack.svg');
+      background-repeat: no-repeat;
+      padding-left: -45px;
+      margin-left: 45px;
+      background-size: contain;
+    }
+      & .postcss {
+      background: url('../assets/tools/postcss.svg');
+      background-repeat: no-repeat;
+      padding-left: 45px;
+      margin-left: -45px;
+      background-size: contain;
+    }
+      & .js {
+      background: url('../assets/tools/square-js.svg');
+      background-repeat: no-repeat;
+      padding-top: 50px;
+      margin-top: -50px;
+      background-size: contain;
+    }
+      & .html {
+      background: url('../assets/tools/html5.svg');
+      background-repeat: no-repeat;
+      background-size: contain;
+    }
+      & .node {
+      background: url('../assets/tools/logo-nodejs.svg');
+      background-repeat: no-repeat;
+      background-size: contain;
+    }
+      & .css {
+      background: url('../assets/tools/css3-alt.svg');
+      background-repeat: no-repeat;
+      background-size: contain;
+    }
+      & .react {
+      background: url('../assets/tools/react.svg');
+      background-repeat: no-repeat;
+      padding-top: 50px;
+      margin-top: -50px;
+      padding-left: -75px;
+      margin-left: 75px;
+      background-size: contain;
+    }
   }
 }

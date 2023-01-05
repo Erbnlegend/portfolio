@@ -8,29 +8,59 @@
   & .projectsNav {
     position: relative;
   }
+  & .projectsNav a:hover {
+    color: rgb(27, 114, 182);
+    font-weight: bold;
+  }
   & .preview {
+    position: relative;
     box-shadow: 1px 1px 5px 1px rgba(0,0,0, .8);
     margin: 10px auto;
     width: 690px;
     height: 360px;
+    & .description {
+      position: absolute;
+      top: 35%;
+      width: 100%;
+      text-align: center;
+    }
     & .preview-tint {
-      background-color: rgba(0,0,0,.6);
+      background-color: rgba(0,0,0,.8);
+      justify-content: space-between;
       height: 100%;
       width: 100%;
     }
+    & .title {
+      font-size: 2.8rem;
+      margin-left: 10px;
+    }
     & .tools {
       position: relative;
-      color: white;
-      top: 5px;
-      right: 0;
       padding: 3px;
-      width: 50px;
+      width: 40px;
     }
-  }
-  & .project-previews {
-
-  }
-  & .projectsAnimation {
-    height: 100%;
+    & .buttons {
+      position: absolute;
+      top: 55%;
+      width: 100%;
+      text-align: center;
+      & button {
+        font-size: 1.7rem;
+        padding: 5px 15px;
+        margin: 15px;
+        border: 1px solid transparent;
+        border-radius: 5px;
+        box-shadow: 1px 1px 5px 1px rgba(0,0,0, .8);
+        transition-duration: .1s;
+      }
+      & button:hover {
+        box-shadow: 1px 1px 5px 1px rgba(255,255,255, .8);
+        border: 1px solid rgb(125,125,125);
+      }
+      & .live button {
+        background-color: rgb(27, 114, 182);
+        color: white;
+      }
+    }
   }
 }
