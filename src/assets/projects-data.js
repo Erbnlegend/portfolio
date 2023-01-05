@@ -51,7 +51,7 @@ const data = [
     name: 'ticTacToe',
     description: 'A two player game of Tic-Tac-Toe!',
     textName: 'Tic-Tac-Toe',
-    tools: ['logo-nodejs', 'webpack', 'square-js', 'html5', 'css3-alt'],
+    tools: ['square-js', 'html5', 'css3-alt'],
     img: './imgs/tictactoe.png',
     github: 'https://github.com/Erbnlegend/tic-tac-toe'
   }
