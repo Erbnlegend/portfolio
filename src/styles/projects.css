@@ -13,12 +13,16 @@
     font-weight: bold;
   }
   & .preview {
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
     position: relative;
     z-index: 0;
     box-shadow: 1px 1px 5px 1px rgba(0,0,0, .8);
     margin: 10px auto;
-    width: 690px;
-    height: 360px;
+    width: 40%;
+    max-height: 500px;
+    min-height: 360px;
     & .preview-tint {
       position: absolute;
       z-index: -1;
@@ -67,6 +71,69 @@
       & .live button {
         background-color: rgb(27, 114, 182);
         color: white;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 1080px) {
+  .projects {
+    & .projectsNav {
+    }
+    & .preview {
+      width: 55%;
+    }
+  }
+}
+@media screen and (max-width: 800px) {
+  .projects {
+    & .projectsNav {
+    }
+    & .preview {
+      width: 50%;
+      & .header {
+        & .title {
+          font-size: 2rem;
+        }
+      }
+      & .description {
+        font-size: .8rem;
+      }
+      & .tools {
+        width: 30px;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 720px) {
+  .projects {
+    & .projectsNav {
+      display: none;
+    }
+    & .preview {
+      width: 95%;
+    }
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .projects {
+    & .projectsNav {
+      display: none;
+    }
+    & .preview {
+      width: 95%;
+      & .header {
+        & .title {
+          font-size: 2rem;
+        }
+      }
+      & .description {
+        font-size: .8rem;
+      }
+      & .tools {
+        width: 30px;
       }
     }
   }

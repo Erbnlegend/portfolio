@@ -1,14 +1,14 @@
 .hero {
   display: flex;
   max-width: 1000px;
-  min-width: 450px;
-  height: 100vh;
+  max-height: 90vh;
+  min-height: 58vh;
   justify-content: center;
-  margin: 8% auto;
+  margin: 80px auto;
   & svg.openTag {
     margin: -25px 50px 50px 50px;
-    width: 250px;
-    height: 250px;
+    max-width: 250px;
+    max-height: 250px;
   }
   & .quote {
     font-size: 2.8rem;
@@ -21,17 +21,16 @@
   }
   & svg.closeTag {
     margin: 200px 50px 0 50px;
-    width: 225px;
-    height: 225px;
+    max-width: 225px;
+    max-height: 225px;
   }
 }
 
 .viewWork {
-  position: absolute;
+  position: relative;
   text-align: center;
-  width: 100%;
   margin: 0 auto;
-  bottom: 10px;
+  top: 10px;
   & p {
     font-size: 1.8rem;
     padding: 0;
@@ -50,16 +49,19 @@
 }
 
 .background-container {
+  display: flex;
+  flex-direction: column;
+  margin-top: 5%;
   & .hero-background {
     position: absolute;
     display: grid;
-    grid-template-columns: repeat(5, minmax(150px, 1fr));
+    grid-template-columns: repeat(5, minmax(100px, 1fr));
     width: 98%;
     height: 80%;
     & .tool {
       opacity: .2;
-      width: 100px;
-      height: 100px;
+      width: 95px;
+      height: 95px;
     }
     & .webpack {
       background: url('../assets/tools/webpack.svg');
@@ -107,4 +109,47 @@
       background-size: contain;
     }
   }
+}
+
+@media screen and (max-width: 1000px) {
+  .hero {
+    width: 95%;
+    height: 60%;
+    & .quote {
+      font-size: 2rem;
+    }
+  }
+  .background-container {
+    & .hero-background {
+      grid-template-columns: repeat(5, minmax(75px, 1fr));
+      & .tool {
+        width: 70px;
+        height: 70px;
+      }
+  }
+ }
+}
+
+@media screen and (max-width: 600px) {
+  .hero {
+    width: 95%;
+    & svg.openTag {
+      display: none;
+    }
+    & svg.closeTag {
+      display: none;
+    }
+    & .quote {
+      font-size: 2rem;
+    }
+  }
+  .background-container {
+    & .hero-background {
+      grid-template-columns: repeat(5, minmax(50px, 1fr));
+      & .tool {
+        width: 45px;
+        height: 45px;
+      }
+  }
+ }
 }

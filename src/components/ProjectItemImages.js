@@ -11,7 +11,7 @@ const ProjectItemImages = (props) => {
   })
 
   return (
-    <div className='preview' id={project.name} style={{ background: `url(${project.img})`, backgroundSize: 'contain', backgroundRepeat: 'no-repeat' }} alt={project.textName} >
+    <div className='preview' id={project.name} style={{ backgroundImage: `url(${project.img})` }} alt={project.textName} >
       <div className='preview-tint'></div>
       <div className='flex-container header'>
           <div className='title'>{project.textName}</div>

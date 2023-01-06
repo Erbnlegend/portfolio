@@ -40,18 +40,16 @@ const Hero = () => {
 
   const opacityShort = useSpring({
     config: { duration: 500 },
-    from: { opacity: 0, left: '-200px' },
+    from: { opacity: 0 },
     to: {
-      opacity: dataRefSlide?.isIntersecting ? 1 : 0,
-      left: dataRefSlide?.isIntersecting ? '0' : '-200px'
+      opacity: dataRefSlide?.isIntersecting ? 1 : 0
     }
   })
   const opacityLong = useSpring({
     config: { duration: 1200 },
-    from: { opacity: 0, right: '-200px' },
+    from: { opacity: 0 },
     to: {
-      opacity: dataRefSlide?.isIntersecting ? 1 : 0,
-      right: dataRefSlide?.isIntersecting ? '0' : '-200px'
+      opacity: dataRefSlide?.isIntersecting ? 1 : 0
     }
   })
 
