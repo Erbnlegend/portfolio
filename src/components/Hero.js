@@ -6,7 +6,7 @@ const Hero = () => {
   // Animations
   function useIntersectionObserver (
     elementRef,
-    { threshold = 0, root = null, rootMargin = '-175px', freezeOnceVisible = false }
+    { threshold = 0, root = null, rootMargin = '25px', freezeOnceVisible = false }
   ) {
     const [entry, setEntry] = React.useState()
 
@@ -56,7 +56,7 @@ const Hero = () => {
   return (
     <div className='background-container'>
       <div className='hero-background'>
-        <div ref={ triggerSlide } ></div>
+        <div className='tool'></div>
         <animated.div style={ opacityShort } >
           <div className='tool webpack'></div>
         </animated.div>
@@ -89,7 +89,7 @@ const Hero = () => {
         <animated.div style={ opacityLong } >
           <div className='tool react'></div>
         </animated.div>
-        <div className='tool'></div>
+        <div ref={ triggerSlide } ></div>
       </div>
       <div className='hero'>
         <svg className='openTag' viewBox="0 0 14.499959 18" strokeLinecap="round" strokeLinejoin="round" fill='none' stroke='currentColor' strokeWidth='1' >

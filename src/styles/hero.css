@@ -2,9 +2,9 @@
   display: flex;
   max-width: 1000px;
   max-height: 90vh;
-  min-height: 58vh;
+  min-height: 55vh;
   justify-content: center;
-  margin: 80px auto;
+  margin: 5% auto;
   & svg.openTag {
     margin: -25px 50px 50px 50px;
     max-width: 250px;
@@ -51,7 +51,7 @@
 .background-container {
   display: flex;
   flex-direction: column;
-  margin-top: 5%;
+  margin-top: 10vh;
   & .hero-background {
     position: absolute;
     display: grid;
@@ -114,7 +114,7 @@
 @media screen and (max-width: 1000px) {
   .hero {
     width: 95%;
-    height: 60%;
+    height: 60vh;
     & .quote {
       font-size: 2rem;
     }
@@ -133,6 +133,7 @@
 @media screen and (max-width: 600px) {
   .hero {
     width: 95%;
+    height: 0;
     & svg.openTag {
       display: none;
     }
@@ -143,13 +144,4 @@
       font-size: 2rem;
     }
   }
-  .background-container {
-    & .hero-background {
-      grid-template-columns: repeat(5, minmax(50px, 1fr));
-      & .tool {
-        width: 45px;
-        height: 45px;
-      }
-  }
- }
 }
