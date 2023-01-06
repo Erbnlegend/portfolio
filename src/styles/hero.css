@@ -133,7 +133,7 @@
 @media screen and (max-width: 600px) {
   .hero {
     width: 95%;
-    height: 0;
+    height: 70vh;
     & svg.openTag {
       display: none;
     }

@@ -6,7 +6,7 @@ const Hero = () => {
   // Animations
   function useIntersectionObserver (
     elementRef,
-    { threshold = 0, root = null, rootMargin = '25px', freezeOnceVisible = false }
+    { threshold = 0, root = null, rootMargin = '0px', freezeOnceVisible = false }
   ) {
     const [entry, setEntry] = React.useState()
 
@@ -39,14 +39,14 @@ const Hero = () => {
   })
 
   const opacityShort = useSpring({
-    config: { duration: 500 },
+    config: { duration: 800 },
     from: { opacity: 0 },
     to: {
       opacity: dataRefSlide?.isIntersecting ? 1 : 0
     }
   })
   const opacityLong = useSpring({
-    config: { duration: 1200 },
+    config: { duration: 1600 },
     from: { opacity: 0 },
     to: {
       opacity: dataRefSlide?.isIntersecting ? 1 : 0
