@@ -52,6 +52,7 @@
   width: 100%;
 }
 .fullScreenMenu {
+  color: white;
   position: fixed;
   flex-direction: column;
   font-size: 3.5rem;

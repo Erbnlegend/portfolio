@@ -102,7 +102,7 @@ const Navbar = (props) => {
         <ul className='fullScreenMenu'>
           <NavLink onClick={menuOverlay} to='./#projects'><li>Projects</li> </NavLink>
           <NavLink onClick={menuOverlay} to='about'><li>About</li> </NavLink>
-          <li onClick={menuOverlay} className='toggleTheme'><Moon className='moon'/></li>
+          <li onClick={menuOverlay} className='toggleTheme'><Moon className='moon' onClick={props.toggleTheme}/></li>
         </ul>
     </div>
   )
