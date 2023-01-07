@@ -1,8 +1,9 @@
 import React, { useEffect, useRef } from 'react'
 import { NavLink } from 'react-router-dom'
 import { Moon, Menu } from 'lucide-react'
+import PropTypes from 'prop-types'
 
-const Navbar = () => {
+const Navbar = (props) => {
   const [weather, setWeather] = React.useState([])
   const isMounted = useRef(false)
 
@@ -69,7 +70,7 @@ const Navbar = () => {
   })
 
   return (
-    <div>
+    <div className=''>
       <nav className='navbar'>
         {(typeof weather.current !== 'undefined')
           ? (
@@ -91,7 +92,7 @@ const Navbar = () => {
         <ul className='desktopMenu'>
           <NavLink to='./#projects'><li>Projects</li> </NavLink>
           <NavLink to='about'><li>About</li> </NavLink>
-          <li className='toggleTheme'><Moon className='moon'/></li>
+          <li className='toggleTheme'><Moon className='moon' onClick={props.toggleTheme}/></li>
         </ul>
         <ul onClick={menuOverlay} className='mobileMenu'>
           <li><Menu className='menuIcon' /></li>
@@ -105,6 +106,9 @@ const Navbar = () => {
         </ul>
     </div>
   )
+}
+Navbar.propTypes = {
+  toggleTheme: PropTypes.func
 }
 
 export default Navbar

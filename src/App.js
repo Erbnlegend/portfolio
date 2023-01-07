@@ -27,6 +27,7 @@ const App = () => {
     <div className={`main ${theme}`}>
       <BrowserRouter>
         <Navbar
+          theme={theme}
           toggleTheme={toggleTheme}
         />
         <Routes>

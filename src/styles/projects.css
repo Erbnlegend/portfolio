@@ -1,4 +1,5 @@
 .projects {
+  color: white;
   & .fixed {
     position: fixed;
     height: 100%;

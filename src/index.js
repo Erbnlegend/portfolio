@@ -20,6 +20,9 @@ import './assets/previews/cv.png'
 import './assets/previews/shopping.png'
 import './assets/previews/toDo.png'
 
+// About img
+import './assets/aaron.jpg'
+
 // Styles
 import './index.html'
 import './styles/main.css'

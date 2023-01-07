@@ -51,7 +51,7 @@
 .background-container {
   display: flex;
   flex-direction: column;
-  margin-top: 10vh;
+  padding-top: 10vh;
   & .hero-background {
     position: absolute;
     display: grid;
