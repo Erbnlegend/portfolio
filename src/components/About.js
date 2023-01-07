@@ -15,8 +15,8 @@ const About = () => {
         As a web developer, I bring my strong problem solving and creativity skills to the table.
         I am always looking for ways to improve processes and find innovative solutions to problems.
         In my free time, I enjoy tinkering with new technologies and staying up to date on the latest web development trends.
-        I am excited to continue learning and growing as a web developer, and am confident that my background in cabinet installation has prepared me for a
-        successful career in this field.
+        I am excited to continue learning and growing as a web developer, and am confident that my background in cabinet installation, and the level of detail it requires,
+        has prepared me for a successful career in this field.
         </p>
       </div>
     </div>
