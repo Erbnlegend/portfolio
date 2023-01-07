@@ -1,5 +1,4 @@
 .projects {
-  color: white;
   & .fixed {
     position: fixed;
     height: 100%;
@@ -14,6 +13,7 @@
     font-weight: bold;
   }
   & .preview {
+    color: white;
     background-position: center center;
     background-size: cover;
     background-repeat: no-repeat;
