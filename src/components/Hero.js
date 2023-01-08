@@ -91,6 +91,7 @@ const Hero = () => {
         </animated.div>
         <div ref={ triggerSlide } ></div>
       </div>
+      <animated.div style={ opacityShort } >
       <div className='hero'>
         <svg className='openTag' viewBox="0 0 14.499959 18" strokeLinecap="round" strokeLinejoin="round" fill='none' stroke='currentColor' strokeWidth='1' >
           <path
@@ -107,6 +108,7 @@ const Hero = () => {
           <path d="M 6,1 1,17"/>
         </svg>
       </div>
+      </animated.div>
       <animated.div style={ opacityShort } >
       <div className='viewWork'>
         <a href='#shoppingCart' >

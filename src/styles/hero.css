@@ -9,11 +9,13 @@
     margin: -25px 50px 50px 50px;
     max-width: 250px;
     max-height: 250px;
+    filter: drop-shadow(2px 0 2px rgb(0,0,0));
   }
   & .quote {
     font-size: 2.8rem;
     padding: 5px;
     align-items: center;
+    text-shadow: 2px 0 2px rgb(0,0,0);
   }
   & .author {
     margin-top: 50px;
@@ -23,6 +25,7 @@
     margin: 200px 50px 0 50px;
     max-width: 225px;
     max-height: 225px;
+    filter: drop-shadow(2px 0 2px rgb(0,0,0));
   }
 }
 
