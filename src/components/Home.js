@@ -2,6 +2,7 @@ import React from 'react'
 import Hero from './Hero'
 import Projects from './Projects'
 import PropTypes from 'prop-types'
+import Footer from './Footer'
 
 const Home = (props) => {
   return (
@@ -10,6 +11,7 @@ const Home = (props) => {
       <Projects
         projects={props.projects}
       />
+      <Footer />
     </div>
   )
 }
