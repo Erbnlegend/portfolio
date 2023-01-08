@@ -39,14 +39,14 @@ const Hero = () => {
   })
 
   const opacityShort = useSpring({
-    config: { duration: 800 },
+    config: { duration: 1000 },
     from: { opacity: 0 },
     to: {
       opacity: dataRefSlide?.isIntersecting ? 1 : 0
     }
   })
   const opacityLong = useSpring({
-    config: { duration: 1600 },
+    config: { duration: 2000 },
     from: { opacity: 0 },
     to: {
       opacity: dataRefSlide?.isIntersecting ? 1 : 0

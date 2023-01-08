@@ -42,9 +42,8 @@
     }
     & .description {
       position: relative;
-      top: 25%;
       width: 90%;
-      margin: 0 auto;
+      margin: 5% auto 0 auto;
       text-align: center;
     }
     & .tools {
