@@ -27,7 +27,7 @@ const data = [
     name: 'battleShip',
     description: 'A game of battleship against the computer! Sink all the enemy ships before yours are destroyed!',
     textName: 'Battleship',
-    tools: ['nodejs', 'webpack', 'js', 'html5', 'css3'],
+    tools: ['nodejs', 'webpack', 'js', 'html5', 'postcss'],
     img: './imgs/battleship.png',
     github: 'https://github.com/Erbnlegend/battleship'
   },
