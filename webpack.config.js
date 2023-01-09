@@ -10,7 +10,7 @@ module.exports = {
     path: path.resolve(__dirname, 'dist'),
     publicPath: '/'
   },
-  mode: 'development',
+  mode: 'production',
   devtool: 'inline-source-map',
   devServer: {
     historyApiFallback: true
@@ -23,7 +23,9 @@ module.exports = {
     extensions: ['.js', '.json']
   },
   optimization: {
-    runtimeChunk: 'single'
+    minimize: true,
+    runtimeChunk: 'single',
+    removeEmptyChunks: true
   },
   module: {
     rules: [

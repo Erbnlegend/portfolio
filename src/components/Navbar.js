@@ -36,7 +36,7 @@ const Navbar = (props) => {
 
     function userLocation () {
       if (navigator.geolocation) {
-        navigator.geolocation.getCurrentPosition(showUserPosition, blockUserPosition)
+        navigator.geolocation.getCurrentPosition(showUserPosition)
       } else {
         console.log('error')
       }
@@ -48,17 +48,11 @@ const Navbar = (props) => {
       getWeatherData(latitude, longitude)
     }
 
-    function blockUserPosition (blockUserPosition) {
-      setWeather('what the f???')
-    }
-
     async function getWeatherData (lat, lon) {
       try {
         const response = await fetch(
-        `http://api.weatherapi.com/v1/current.json?key=c2e48ee08dc642ad9ac164602222212&q=${lat},${lon}`,
-        {
-          mode: 'cors'
-        })
+          `//localhost:5000/weather?lat=${lat}&lon=${lon}`, { method: 'GET', mode: 'cors' }
+        )
         const weatherData = await response.json()
         isMounted.current = true
         setWeather(weatherData)
@@ -68,7 +62,7 @@ const Navbar = (props) => {
       }
     }
   })
-
+  console.log(weather)
   return (
     <div className=''>
       <nav className='navbar'>
