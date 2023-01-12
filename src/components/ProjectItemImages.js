@@ -21,7 +21,7 @@ const ProjectItemImages = (props) => {
         </div>
       <div className='description text-md'>{project.description}</div>
       <div className='buttons text-sm'>
-        <a className='live' href={`https://www.aaronerb.dev/${project.name}`} target='_blank' rel="noreferrer"><button>Live preview</button></a>
+        <a className='live' href={`https://www.aaronerb.dev/projects/${project.name}`} target='_blank' rel="noreferrer"><button>Live preview</button></a>
         <a className='code' href={project.github} target='_blank' rel="noreferrer"><button>View the code</button></a>
       </div>
     </div>
