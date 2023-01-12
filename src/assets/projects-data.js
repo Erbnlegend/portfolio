@@ -1,17 +1,9 @@
 const data = [
   {
-    name: 'shoppingCart',
-    description: 'A mock shopping cart that allows everything you would expect from one.',
-    textName: 'Shopping Cart',
-    tools: ['nodejs', 'webpack', 'react', 'js', 'html5', 'css3'],
-    img: './imgs/shopping.png',
-    github: 'https://github.com/Erbnlegend/shopping-cart'
-  },
-  {
     name: 'githubClone',
     description: 'Rebuild the Github home page with all the fancy gizmos.',
     textName: 'Github Clone',
-    tools: ['nodejs', 'webpack', 'react', 'js', 'html5', 'css3'],
+    tools: ['nodejs', 'webpack', 'react', 'js', 'html5', 'css3', 'postcss'],
     img: './imgs/github.png',
     github: 'https://github.com/Erbnlegend/github-clone'
   },
@@ -24,10 +16,18 @@ const data = [
     github: 'https://github.com/Erbnlegend/cv-creator'
   },
   {
+    name: 'shoppingCart',
+    description: 'A mock shopping cart that allows everything you would expect from one.',
+    textName: 'Shopping Cart',
+    tools: ['nodejs', 'webpack', 'react', 'js', 'html5', 'css3', 'postcss'],
+    img: './imgs/shopping.png',
+    github: 'https://github.com/Erbnlegend/shopping-cart'
+  },
+  {
     name: 'battleShip',
     description: 'A game of battleship against the computer! Sink all the enemy ships before yours are destroyed!',
     textName: 'Battleship',
-    tools: ['nodejs', 'webpack', 'js', 'html5', 'css3'],
+    tools: ['nodejs', 'webpack', 'js', 'html5', 'css3', 'postcss'],
     img: './imgs/battleship.png',
     github: 'https://github.com/Erbnlegend/battleship'
   },

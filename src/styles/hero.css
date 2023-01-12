@@ -1,8 +1,7 @@
 .hero {
   display: flex;
   max-width: 1000px;
-  max-height: 90vh;
-  min-height: 55vh;
+  height: 100vh;
   justify-content: center;
   margin: 5% auto;
   & svg.openTag {
@@ -30,10 +29,13 @@
 }
 
 .viewWork {
-  position: relative;
+  position: absolute;
   text-align: center;
-  margin: 0 auto;
-  top: 10px;
+  left: 0;
+  right: 0;
+  margin-left: auto;
+  margin-right: auto;
+  bottom: 0;
   & p {
     font-size: 1.8rem;
     padding: 0;
@@ -117,7 +119,6 @@
 @media screen and (max-width: 1000px) {
   .hero {
     width: 95%;
-    height: 60vh;
     & .quote {
       font-size: 2rem;
     }
