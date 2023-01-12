@@ -51,7 +51,7 @@ const Navbar = (props) => {
     async function getWeatherData (lat, lon) {
       try {
         const response = await fetch(
-          `//localhost:5000/weather?lat=${lat}&lon=${lon}`, { method: 'GET', mode: 'cors' }
+          `/weather?lat=${lat}&lon=${lon}`, { method: 'GET', mode: 'cors' }
         )
         const weatherData = await response.json()
         isMounted.current = true

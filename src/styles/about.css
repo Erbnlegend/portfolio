@@ -22,7 +22,7 @@
 
 @media screen and (max-width: 1300px) {
   .about {
-    width: 90%;
+    width: 95%;
     margin: 100px auto;
     & .header {
     }
@@ -51,6 +51,8 @@
       }
       & img {
         margin: 0 auto;
+        max-width: 100%;
+        max-height: 400px;
       }
     }
   }

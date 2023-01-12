@@ -111,7 +111,7 @@ const Hero = () => {
       </animated.div>
       <animated.div style={ opacityShort } >
       <div className='viewWork'>
-        <a href='#shoppingCart' >
+        <a href='#githubClone' >
         <p>View my work</p>
         <ChevronDown className='viewArrow'/>
         </a>
