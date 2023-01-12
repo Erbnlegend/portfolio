@@ -62,7 +62,6 @@ const Navbar = (props) => {
       }
     }
   })
-  console.log(weather)
   return (
     <div className=''>
       <nav className='navbar'>
