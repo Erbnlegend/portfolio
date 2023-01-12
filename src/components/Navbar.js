@@ -70,7 +70,7 @@ const Navbar = (props) => {
           ? (
           <ul className='weather'>
             <li><img src={weather.current.condition.icon} /></li>
-            <li>{weather.current.temp_f}&#8457;</li>
+            <li>{Math.round(weather.current.temp_f)}&#8457;</li>
             <div className='flex-column'>
               <li className='text-sm'>{weather.location.name}</li>
               <li className='text-sm'>{weather.location.region}</li>
