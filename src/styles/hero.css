@@ -1,9 +1,10 @@
 .hero {
   display: flex;
   max-width: 1000px;
-  height: 100vh;
-  justify-content: center;
   margin: 5% auto;
+  & .mySwiper {
+    height: 50%;
+  }
   & svg.openTag {
     margin: -25px 50px 50px 50px;
     max-width: 250px;
@@ -26,6 +27,18 @@
     max-height: 225px;
     filter: drop-shadow(2px 0 2px rgb(0,0,0));
   }
+}
+
+
+.swiper-button-next, .swiper-rtl .swiper-button-prev {
+  opacity: 0;
+  height: 50%;
+  width: 175px;
+}
+.swiper-button-prev, .swiper-rtl .swiper-button-next {
+  opacity: 0;
+  height: 50%;
+  width: 175px;
 }
 
 .viewWork {
@@ -56,6 +69,7 @@
 .background-container {
   display: flex;
   flex-direction: column;
+  height: 100vh;
   padding-top: 10vh;
   & .hero-background {
     position: absolute;

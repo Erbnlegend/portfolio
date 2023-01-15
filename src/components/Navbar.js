@@ -9,19 +9,19 @@ const Navbar = (props) => {
 
   const [menu, setMenu] = React.useState(true)
 
-  const menuIcon = document.querySelector('.menuIcon')
-  const fullScreenOverlay = document.querySelector('.fullScreenOverlay')
-  const fullScreenMenu = document.querySelector('.fullScreenMenu')
   const menuOverlay = (e) => {
+    const menuIconLines = document.querySelector('.menuIconLines')
+    const fullScreenOverlay = document.querySelector('.fullScreenOverlay')
+    const fullScreenMenu = document.querySelector('.fullScreenMenu')
     if (menu) {
-      menuIcon.style.transform = 'rotate(360deg)'
+      menuIconLines.style.transform = 'rotate(360deg)'
       fullScreenMenu.style.transform = 'rotate(360deg)'
       fullScreenMenu.style.height = '100%'
       fullScreenOverlay.style.height = '100%'
       setMenu(false)
     }
     if (!menu) {
-      menuIcon.style.transform = 'none'
+      menuIconLines.style.transform = 'none'
       fullScreenMenu.style.transform = 'none'
       fullScreenMenu.style.height = '0px'
       fullScreenOverlay.style.height = '0px'
@@ -88,7 +88,7 @@ const Navbar = (props) => {
           <li className='toggleTheme'><Moon className='moon' onClick={props.toggleTheme}/></li>
         </ul>
         <ul onClick={menuOverlay} className='mobileMenu'>
-          <li><Menu className='menuIcon' /></li>
+          <li><Menu className='menuIconLines' /></li>
         </ul>
       </nav>
       <div className='fullScreenOverlay'></div>
