@@ -7,16 +7,18 @@ const About = () => {
       <div className='section flex-container'>
         <img src='./imgs/aaron.jpg' alt='aaron being handsome' />
         <p className='paragraph'>
-        Hi there! My name is Aaron Erb and I am a cabinet installer and business owner, turned web developer.
-        I have always been a problem solver at heart and love coming up with creative solutions to complex challenges.
-        After six years of working as a cabinet installer and always tinkering with building computers and learning web technologies,
-        I decided to pursue my passion for technology and enrolled in a web development program.
-        I quickly fell in love with the field and knew that this was my true calling.
-        As a web developer, I bring my strong problem solving and creativity skills to the table.
-        I am always looking for ways to improve processes and find innovative solutions to problems.
-        In my free time, I enjoy tinkering with new technologies and staying up to date on the latest web development trends.
-        I am excited to continue learning and growing as a web developer, and am confident that my background in cabinet installation, and the level of detail it requires,
-        has prepared me for a successful career in this field.
+        My name is Aaron, and I am full of passion for technology, tabletop gaming, and exploring new places with my loved ones.
+        I am married to my wonderful wife and together we have three beautiful daughters.<br/>
+        I have always had a love for technology and while I have not been in the industry for several years now, my experience and skills with JavaScript
+        have allowed me to excel with learning new technologies such as React, Node and Express.
+        I am always looking for new and exciting opportunities to continue my professional development.
+        In addition to my passion for technology, I am also an avid tabletop gamer and enjoy spending time with my family playing games
+        and exploring the outdoors.<br />
+        As a family, we believe in creating memories and experiencing new things together.
+        Recently, we made the exciting decision to move from Phoenix, AZ to Kansas City, MO to start a new chapter in our lives.
+        Kansas City offers endless opportunities for exploration and we can&apos;t wait to discover all the adventures this city has in store for us.<br/>
+        Thank you for visiting my professional portfolio page, and I hope to have the opportunity to share my skills,
+        experiences, and passion for technology with you.
         </p>
       </div>
     </div>
