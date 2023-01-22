@@ -7,7 +7,6 @@ const About = () => {
       <div className='section flex-container'>
         <img src='./imgs/aaron.jpg' alt='aaron being handsome' />
         <p className='paragraph'>
-          {/* Testing that git works */}
         My name is Aaron, and I am full of passion for technology, tabletop gaming, and exploring new places with my loved ones.
         I am married to my wonderful wife and together we have three beautiful daughters.<br/>
         I have always had a love for technology and while I have not been in the industry for several years now, my experience and skills with JavaScript
